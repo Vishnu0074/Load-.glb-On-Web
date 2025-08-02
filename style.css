@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background-color: #000;
+  overflow: hidden;
+  color: white;
+}
+
+#container3D canvas {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-image: url(/fl.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+header {
+  position: absolute;
+  top: 1.5em;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.stats, .details ,.social{
+  position: absolute;
+  text-align: left;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.stats {
+  top: 1em;
+  left: 1.5em;
+  line-height: 1;
+}
+
+.stats {
+  top: 8em;
+  left: 1.5em;
+  line-height: 1;
+}
+
+.details {
+  bottom: 2em;
+  left: 1.5em;
+  line-height: 1;
+  display: block;
+}
+
+header h1,
+.stats h1,
+.details h1 {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 0.3em;
+  display: inline-block;
+  padding: 0.4em 1em;
+  border-radius: 8px;
+}
+
+.stats p,
+.details p {
+  font-size: 0.7em;
+  margin: 0.2em 0;
+  display: block;
+  padding: 0.2em 0.8em;
+  border-radius: 6px;
+}
+.social {
+  position: absolute;
+  bottom: 5em;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+  pointer-events: auto;
+}
+
+
+.insta-btn {
+  display: inline-block;
+  font-size: 1.8em;
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.insta-btn:hover {
+  transform: scale(1.2);
+}
